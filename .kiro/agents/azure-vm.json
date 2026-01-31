@@ -1,0 +1,12 @@
+{
+  "name": "azure-vm",
+  "description": "Azure VM専門エージェント",
+  "prompt": "Azure VM、VNet、NSG、Load Balancer専門。JSON形式で応答すること。",
+  "tools": ["read", "web"],
+  "allowedTools": ["read", "web"],
+  "resources": [
+    "skill://.kiro/skills/azure/common/SKILL.md",
+    "skill://.kiro/skills/azure/vm/SKILL.md"
+  ],
+  "model": "claude-sonnet-4.5"
+}

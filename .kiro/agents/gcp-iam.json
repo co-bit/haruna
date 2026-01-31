@@ -1,0 +1,12 @@
+{
+  "name": "gcp-iam",
+  "description": "GCP IAM専門エージェント",
+  "prompt": "IAM、Service Accounts、Secret Manager、Cloud KMS専門。JSON形式で応答すること。",
+  "tools": ["read", "web"],
+  "allowedTools": ["read", "web"],
+  "resources": [
+    "skill://.kiro/skills/gcp/common/SKILL.md",
+    "skill://.kiro/skills/gcp/iam/SKILL.md"
+  ],
+  "model": "claude-sonnet-4.5"
+}

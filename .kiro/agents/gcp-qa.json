@@ -1,9 +1,21 @@
 {
   "name": "gcp-qa",
-  "description": "GCP専門エージェント",
-  "prompt": "GCPサービス全般の質問に回答する。",
-  "tools": ["read", "web"],
-  "allowedTools": ["read", "web"],
-  "resources": [],
+  "description": "GCPオーケストレーター",
+  "prompt": "GCPサービス別にサブエージェントを呼び出し、応答をgcp-qa-response.jsonに保存してください。",
+  "tools": ["read", "write", "subagent", "web"],
+  "allowedTools": ["read", "write", "subagent", "web"],
+  "toolsSettings": {
+    "subagent": {
+      "allowedAgents": ["gcp-compute", "gcp-storage", "gcp-functions", "gcp-iam"]
+    },
+    "write": {
+      "allowedPaths": ["gcp-qa-response.json"]
+    }
+  },
+  "resources": [
+    "file://.kiro/skills/gcp/qa/OUTPUT.md",
+    "skill://.kiro/skills/gcp/common/SKILL.md",
+    "skill://.kiro/skills/gcp/qa/SKILL.md"
+  ],
   "model": "claude-sonnet-4.5"
 }

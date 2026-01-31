@@ -1,9 +1,21 @@
 {
   "name": "azure-qa",
-  "description": "Azure専門エージェント",
-  "prompt": "Azureサービス全般の質問に回答する。",
-  "tools": ["read", "web"],
-  "allowedTools": ["read", "web"],
-  "resources": [],
+  "description": "Azureオーケストレーター",
+  "prompt": "Azureサービス別にサブエージェントを呼び出し、応答をazure-qa-response.jsonに保存してください。",
+  "tools": ["read", "write", "subagent", "web"],
+  "allowedTools": ["read", "write", "subagent", "web"],
+  "toolsSettings": {
+    "subagent": {
+      "allowedAgents": ["azure-vm", "azure-storage", "azure-functions", "azure-ad"]
+    },
+    "write": {
+      "allowedPaths": ["azure-qa-response.json"]
+    }
+  },
+  "resources": [
+    "file://.kiro/skills/azure/qa/OUTPUT.md",
+    "skill://.kiro/skills/azure/common/SKILL.md",
+    "skill://.kiro/skills/azure/qa/SKILL.md"
+  ],
   "model": "claude-sonnet-4.5"
 }

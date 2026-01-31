@@ -1,0 +1,12 @@
+{
+  "name": "azure-storage",
+  "description": "Azure Storage専門エージェント",
+  "prompt": "Azure Storage、Blob、File、Queue、Table専門。JSON形式で応答すること。",
+  "tools": ["read", "web"],
+  "allowedTools": ["read", "web"],
+  "resources": [
+    "skill://.kiro/skills/azure/common/SKILL.md",
+    "skill://.kiro/skills/azure/storage/SKILL.md"
+  ],
+  "model": "claude-sonnet-4.5"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "gcp-functions",
+  "description": "GCP Functions専門エージェント",
+  "prompt": "Cloud Functions、Cloud Run、Pub/Sub、Cloud Tasks専門。JSON形式で応答すること。",
+  "tools": ["read", "web"],
+  "allowedTools": ["read", "web"],
+  "resources": [
+    "skill://.kiro/skills/gcp/common/SKILL.md",
+    "skill://.kiro/skills/gcp/functions/SKILL.md"
+  ],
+  "model": "claude-sonnet-4.5"
+}
