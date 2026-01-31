@@ -1,0 +1,24 @@
+{
+  "name": "aws-s3",
+  "description": "S3専門エージェント",
+  "prompt": "S3、ストレージ、バケット、ライフサイクル専門。JSON形式で応答すること。",
+  "mcpServers": {
+    "aws-docs": {
+      "command": "uvx",
+      "args": ["awslabs.aws-documentation-mcp-server@latest"],
+      "env": { "FASTMCP_LOG_LEVEL": "ERROR" }
+    },
+    "aws-knowledge": {
+      "command": "uvx",
+      "args": ["fastmcp", "run", "https://knowledge-mcp.global.api.aws"],
+      "env": {}
+    }
+  },
+  "tools": ["read", "@aws-docs", "@aws-knowledge"],
+  "allowedTools": ["read", "@aws-docs", "@aws-knowledge"],
+  "resources": [
+    "skill://.kiro/skills/aws/common/SKILL.md",
+    "skill://.kiro/skills/aws/s3/SKILL.md"
+  ],
+  "model": "claude-sonnet-4.5"
+}

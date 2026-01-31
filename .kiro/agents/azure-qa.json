@@ -1,0 +1,9 @@
+{
+  "name": "azure-qa",
+  "description": "Azure専門エージェント",
+  "prompt": "Azureサービス全般の質問に回答する。",
+  "tools": ["read", "web"],
+  "allowedTools": ["read", "web"],
+  "resources": [],
+  "model": "claude-sonnet-4.5"
+}

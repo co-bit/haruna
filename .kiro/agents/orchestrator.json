@@ -1,0 +1,14 @@
+{
+  "name": "orchestrator",
+  "description": "クラウドQAオーケストレーター",
+  "prompt": "クラウドプロバイダー別にサブエージェントを呼び出してください。AWS関連はaws-qa、Azure関連はazure-qa、GCP関連はgcp-qaを使用します。サブエージェントからの応答をユーザーに返してください。\n\n注意: 自分で直接回答せず、必ずサブエージェントに委譲すること。aws-ec2/aws-iam/aws-s3/aws-lambdaを直接呼び出さないこと。",
+  "tools": ["read", "subagent"],
+  "allowedTools": ["read", "subagent"],
+  "toolsSettings": {
+    "subagent": {
+      "allowedAgents": ["aws-qa", "azure-qa", "gcp-qa"]
+    }
+  },
+  "resources": [],
+  "model": "claude-sonnet-4.5"
+}

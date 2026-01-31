@@ -1,0 +1,9 @@
+{
+  "name": "gcp-qa",
+  "description": "GCP専門エージェント",
+  "prompt": "GCPサービス全般の質問に回答する。",
+  "tools": ["read", "web"],
+  "allowedTools": ["read", "web"],
+  "resources": [],
+  "model": "claude-sonnet-4.5"
+}

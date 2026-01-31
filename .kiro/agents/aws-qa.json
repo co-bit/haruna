@@ -1,0 +1,33 @@
+{
+  "name": "aws-qa",
+  "description": "AWSオーケストレーター",
+  "prompt": "AWSサービス別にサブエージェントを呼び出し、応答をaws-qa-response.jsonに保存してください。",
+  "mcpServers": {
+    "aws-docs": {
+      "command": "uvx",
+      "args": ["awslabs.aws-documentation-mcp-server@latest"],
+      "env": { "FASTMCP_LOG_LEVEL": "ERROR" }
+    },
+    "aws-knowledge": {
+      "command": "uvx",
+      "args": ["fastmcp", "run", "https://knowledge-mcp.global.api.aws"],
+      "env": {}
+    }
+  },
+  "tools": ["read", "write", "subagent", "@aws-docs", "@aws-knowledge"],
+  "allowedTools": ["read", "write", "subagent", "@aws-docs", "@aws-knowledge"],
+  "toolsSettings": {
+    "subagent": {
+      "allowedAgents": ["aws-ec2", "aws-iam", "aws-s3", "aws-lambda"]
+    },
+    "write": {
+      "allowedPaths": ["aws-qa-response.json"]
+    }
+  },
+  "resources": [
+    "file://.kiro/skills/aws/qa-output/SKILL.md",
+    "skill://.kiro/skills/aws/common/SKILL.md",
+    "skill://.kiro/skills/aws/qa/SKILL.md"
+  ],
+  "model": "claude-sonnet-4.5"
+}
