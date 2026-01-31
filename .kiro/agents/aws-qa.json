@@ -25,7 +25,7 @@
     }
   },
   "resources": [
-    "file://.kiro/skills/aws/qa-output/SKILL.md",
+    "file://.kiro/skills/aws/qa/OUTPUT.md",
     "skill://.kiro/skills/aws/common/SKILL.md",
     "skill://.kiro/skills/aws/qa/SKILL.md"
   ],
