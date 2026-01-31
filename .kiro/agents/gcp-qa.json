@@ -1,7 +1,7 @@
 {
   "name": "gcp-qa",
   "description": "GCPオーケストレーター",
-  "prompt": "GCPサービス別にサブエージェントを呼び出し、応答をgcp-qa-response.jsonに保存してください。",
+  "prompt": "GCPサービス別にサブエージェントを呼び出し、応答を統合してください。",
   "tools": ["read", "write", "subagent", "web"],
   "allowedTools": ["read", "write", "subagent", "web"],
   "toolsSettings": {
@@ -12,10 +12,6 @@
       "allowedPaths": ["gcp-qa-response.json"]
     }
   },
-  "resources": [
-    "file://.kiro/skills/gcp/qa/OUTPUT.md",
-    "skill://.kiro/skills/gcp/common/SKILL.md",
-    "skill://.kiro/skills/gcp/qa/SKILL.md"
-  ],
+  "resources": [],
   "model": "claude-sonnet-4.5"
 }

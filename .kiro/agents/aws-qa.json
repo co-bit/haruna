@@ -1,7 +1,7 @@
 {
   "name": "aws-qa",
   "description": "AWSオーケストレーター",
-  "prompt": "AWSサービス別にサブエージェントを呼び出し、応答をaws-qa-response.jsonに保存してください。",
+  "prompt": "AWSサービス別にサブエージェントを呼び出し、応答を統合してください。",
   "mcpServers": {
     "aws-docs": {
       "command": "uvx",
@@ -24,10 +24,6 @@
       "allowedPaths": ["aws-qa-response.json"]
     }
   },
-  "resources": [
-    "file://.kiro/skills/aws/qa/OUTPUT.md",
-    "skill://.kiro/skills/aws/common/SKILL.md",
-    "skill://.kiro/skills/aws/qa/SKILL.md"
-  ],
+  "resources": [],
   "model": "claude-sonnet-4.5"
 }

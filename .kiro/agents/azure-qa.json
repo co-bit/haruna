@@ -1,7 +1,7 @@
 {
   "name": "azure-qa",
   "description": "Azureオーケストレーター",
-  "prompt": "Azureサービス別にサブエージェントを呼び出し、応答をazure-qa-response.jsonに保存してください。",
+  "prompt": "Azureサービス別にサブエージェントを呼び出し、応答を統合してください。",
   "tools": ["read", "write", "subagent", "web"],
   "allowedTools": ["read", "write", "subagent", "web"],
   "toolsSettings": {
@@ -12,10 +12,6 @@
       "allowedPaths": ["azure-qa-response.json"]
     }
   },
-  "resources": [
-    "file://.kiro/skills/azure/qa/OUTPUT.md",
-    "skill://.kiro/skills/azure/common/SKILL.md",
-    "skill://.kiro/skills/azure/qa/SKILL.md"
-  ],
+  "resources": [],
   "model": "claude-sonnet-4.5"
 }

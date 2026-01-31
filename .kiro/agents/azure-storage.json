@@ -5,7 +5,6 @@
   "tools": ["read", "web"],
   "allowedTools": ["read", "web"],
   "resources": [
-    "skill://.kiro/skills/azure/common/SKILL.md",
     "skill://.kiro/skills/azure/storage/SKILL.md"
   ],
   "model": "claude-sonnet-4.5"

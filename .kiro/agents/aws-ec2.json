@@ -17,7 +17,6 @@
   "tools": ["read", "@aws-docs", "@aws-knowledge"],
   "allowedTools": ["read", "@aws-docs", "@aws-knowledge"],
   "resources": [
-    "skill://.kiro/skills/aws/common/SKILL.md",
     "skill://.kiro/skills/aws/ec2/SKILL.md"
   ],
   "model": "claude-sonnet-4.5"

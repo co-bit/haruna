@@ -5,7 +5,6 @@
   "tools": ["read", "web"],
   "allowedTools": ["read", "web"],
   "resources": [
-    "skill://.kiro/skills/gcp/common/SKILL.md",
     "skill://.kiro/skills/gcp/compute/SKILL.md"
   ],
   "model": "claude-sonnet-4.5"
