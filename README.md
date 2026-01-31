@@ -37,11 +37,14 @@ orchestrator (トップレベル)
    cd haruna
    ```
 
-3. **エージェントの初期化**
+3. **エージェントの起動**
    ```bash
    # プロジェクトディレクトリで実行
-   kiro-cli chat
+   # ⚠️ 必ずorchestratorエージェントを指定すること
+   kiro-cli chat --agent orchestrator
    ```
+
+   > **重要**: `--agent orchestrator`を指定しないと、サブエージェントへのルーティングが行われず、直接回答モードになります。
 
 ## 💡 使用例
 
