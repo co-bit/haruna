@@ -1,6 +1,6 @@
 ---
 name: azure-storage-specialist
-description: 【必須】Azure Storage、Blob、File、Queue、Tableに関する質問への応答形式。応答時に必ず参照してJSON形式で回答すること。
+description: Azure Blob、File、Queue、Table Storageの質問に回答。ストレージアカウント、冗長性、SASトークン、Data Lakeについて聞かれたときに使用。
 ---
 
 # Azure Storage専門領域

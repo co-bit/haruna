@@ -1,6 +1,6 @@
 ---
 name: gcp-functions-specialist
-description: 【必須】Cloud Functions、Cloud Run、Pub/Sub、Cloud Tasksに関する質問への応答形式。応答時に必ず参照してJSON形式で回答すること。
+description: Cloud Functions、Pub/Sub、Cloud Tasks、Workflowsの質問に回答。イベント駆動設計、非同期処理、ワークフローオーケストレーションについて聞かれたときに使用。
 ---
 
 # GCP Functions専門領域

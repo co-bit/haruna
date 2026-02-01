@@ -1,6 +1,6 @@
 ---
 name: aws-lambda-specialist
-description: 【必須】Lambda、サーバーレス、Step Functions、SAMに関する質問への応答形式。応答時に必ず参照してJSON形式で回答すること。
+description: Lambda、Step Functions、サーバーレスの質問に回答。関数設計、イベント駆動、API統合、コールドスタート対策について聞かれたときに使用。
 ---
 
 # Lambda専門領域

@@ -1,6 +1,6 @@
 ---
 name: aws-ec2-specialist
-description: 【必須】EC2、EBS、AMI、Auto Scaling、ALB、NLB、セキュリティグループに関する質問への応答形式。応答時に必ず参照してJSON形式で回答すること。
+description: EC2インスタンス、EBS、AMI、Auto Scaling、ALB/NLBの質問に回答。インスタンスタイプ選定、ボリューム設計、負荷分散、スケーリング設定について聞かれたときに使用。
 ---
 
 # EC2専門領域

@@ -1,6 +1,6 @@
 ---
 name: azure-vm-specialist
-description: 【必須】Azure VM、VNet、NSG、Load Balancerに関する質問への応答形式。応答時に必ず参照してJSON形式で回答すること。
+description: Azure VM、VNet、NSG、Load Balancerの質問に回答。仮想マシン選定、ネットワーク設計、可用性、スケールセットについて聞かれたときに使用。
 ---
 
 # Azure VM専門領域

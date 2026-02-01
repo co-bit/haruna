@@ -1,6 +1,6 @@
 ---
 name: azure-ad-specialist
-description: 【必須】Azure AD/Entra ID、RBAC、Managed Identity、Key Vaultに関する質問への応答形式。応答時に必ず参照してJSON形式で回答すること。
+description: Azure AD/Entra ID、RBAC、Managed Identity、Key Vaultの質問に回答。認証設計、権限管理、シークレット管理について聞かれたときに使用。
 ---
 
 # Azure AD/Entra ID専門領域

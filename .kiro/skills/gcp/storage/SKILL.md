@@ -1,6 +1,6 @@
 ---
 name: gcp-storage-specialist
-description: 【必須】Cloud Storage、Persistent Disk、Cloud SQL、Firestoreに関する質問への応答形式。応答時に必ず参照してJSON形式で回答すること。
+description: Cloud Storage、Cloud SQL、Firestore、Spannerの質問に回答。オブジェクトストレージ、データベース選定、バックアップ戦略について聞かれたときに使用。
 ---
 
 # GCP Storage専門領域

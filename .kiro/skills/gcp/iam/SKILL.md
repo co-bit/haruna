@@ -1,6 +1,6 @@
 ---
 name: gcp-iam-specialist
-description: 【必須】IAM、Service Accounts、Secret Manager、Cloud KMSに関する質問への応答形式。応答時に必ず参照してJSON形式で回答すること。
+description: GCP IAM、Service Accounts、Secret Manager、Cloud KMSの質問に回答。権限設計、サービスアカウント管理、暗号化戦略について聞かれたときに使用。
 ---
 
 # GCP IAM専門領域

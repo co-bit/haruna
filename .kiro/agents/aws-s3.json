@@ -19,5 +19,13 @@
   "resources": [
     "skill://.kiro/skills/aws/s3/SKILL.md"
   ],
-  "model": "claude-sonnet-4.5"
+  "model": "claude-sonnet-4.5",
+  "hooks": {
+    "stop": [
+      {
+        "command": "scripts/validate-json-response.sh",
+        "description": "JSON応答形式検証"
+      }
+    ]
+  }
 }

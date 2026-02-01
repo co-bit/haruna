@@ -25,5 +25,20 @@
     }
   },
   "resources": [],
-  "model": "claude-sonnet-4.5"
+  "model": "claude-sonnet-4.5",
+  "hooks": {
+    "postToolUse": [
+      {
+        "matcher": "subagent",
+        "command": "scripts/validate-json-response.sh",
+        "description": "サブエージェント応答のJSON形式検証"
+      }
+    ],
+    "stop": [
+      {
+        "command": "scripts/validate-orchestrator-response.sh",
+        "description": "統合応答の形式検証"
+      }
+    ]
+  }
 }

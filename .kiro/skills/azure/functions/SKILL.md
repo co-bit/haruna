@@ -1,6 +1,6 @@
 ---
 name: azure-functions-specialist
-description: 【必須】Azure Functions、Logic Apps、Event Grid、Service Busに関する質問への応答形式。応答時に必ず参照してJSON形式で回答すること。
+description: Azure Functions、Logic Apps、Event Grid、Service Busの質問に回答。サーバーレス設計、ワークフロー自動化、メッセージングについて聞かれたときに使用。
 ---
 
 # Azure Functions専門領域

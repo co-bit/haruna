@@ -10,5 +10,36 @@
     }
   },
   "resources": [],
-  "model": "claude-sonnet-4.5"
+  "model": "claude-sonnet-4.5",
+  "hooks": {
+    "userPromptSubmit": [
+      {
+        "command": "scripts/detect-cloud-provider.sh",
+        "description": "クラウドプロバイダーを事前検出してルーティング最適化"
+      }
+    ],
+    "agentSpawn": [
+      {
+        "command": "scripts/log-session.sh",
+        "description": "セッション開始をログに記録"
+      }
+    ],
+    "postToolUse": [
+      {
+        "matcher": "use_subagent",
+        "command": "scripts/validate-json-response.sh",
+        "description": "サブエージェント（aws-qa/azure-qa/gcp-qa）応答のJSON検証"
+      }
+    ],
+    "stop": [
+      {
+        "command": "scripts/log-session.sh",
+        "description": "セッション終了をログに記録"
+      },
+      {
+        "command": "scripts/validate-orchestrator-response.sh",
+        "description": "統合応答の形式検証"
+      }
+    ]
+  }
 }

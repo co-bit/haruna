@@ -1,6 +1,6 @@
 ---
 name: gcp-compute-specialist
-description: 【必須】Compute Engine、GKE、App Engine、Cloud Runに関する質問への応答形式。応答時に必ず参照してJSON形式で回答すること。
+description: Compute Engine、GKE、App Engine、Cloud Runの質問に回答。VM設計、コンテナオーケストレーション、サーバーレスデプロイについて聞かれたときに使用。
 ---
 
 # GCP Compute専門領域
